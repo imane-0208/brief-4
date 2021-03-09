@@ -1,0 +1,226 @@
+
+.dash{
+    position: absolute;
+    transform: translatey(160px);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    
+    .head_dash{
+        width: 100%;
+        display: flex;
+        background-color: $color2;
+        color: $color1;
+        padding: 15px 30px ;
+        .title_dash{
+            float: left;
+            width: 50%;
+            font-size: 13px;
+            h2{
+                margin-left: 15px;
+            }
+        }
+        .btn_dash{
+            float: right;
+            width: 50%;
+            display: flex;
+            align-items: center;
+             div{
+                 transform: translateX(400px);
+                 button{
+                    padding: 5px  15px ;
+                    background-color: $color3;
+                    color: $color1;
+                    outline: none;
+                    border: none;
+                    font-size: 15px;
+                    &:hover{
+                        background-color: $color5;
+                    }
+
+                 }
+                 input{
+                    padding: 5px  0px ;
+                    outline: none;
+                    //width: 2;
+                 }
+             }
+        }
+    }
+
+    .dash_content{
+        width: 100%;
+
+        table{
+            tr{
+                
+               border-bottom: solid 5px white;
+               
+            }
+            border-collapse: collapse;
+            text-align: center;
+            
+            .data{
+                background-color: $color1;
+                
+                
+              
+
+                &:hover{
+                    background-color: white;
+                }
+
+            }
+            
+            th{
+                background-color: $color4;
+                color: $color1;
+                padding: 10px  60px ;
+            }
+            td{
+               
+                margin-bottom: 5px;
+                color: $color2;
+                padding: 7px  60px ;
+                span{
+                  
+                    font-size: 30px;
+
+                    i{
+                        &:hover{
+                            transform: scale(1.2);
+                            transition: 300ms;
+                        }
+
+                        }
+                    
+                }
+                .edit{
+                    margin-right: 20px;
+                    color: $color4;
+                   
+                    
+                }
+                .delete{
+                    color: $color3;
+                }
+
+               
+            }
+        }
+    }
+    
+
+}
+@media screen and (max-width: 600px){
+    .none{
+        display: none;
+    }
+
+    .head_dash{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px ;
+
+        .title_dash{
+            font-size: 13px;
+            h2{
+                margin-left: 15px;
+            }
+        }
+        .btn_dash{
+            
+           
+            display: flex;
+            align-items: center;
+             div{
+                 
+                 button{
+                    padding: 5px  15px ;
+                    background-color: $color3;
+                    color: $color1;
+                    outline: none;
+                    border: none;
+                    font-size: 15px;
+                    &:hover{
+                        background-color: $color5;
+                    }
+
+                 }
+                 input{
+                    padding: 5px  0px ;
+                    outline: none;
+                    //width: 2;
+                 }
+             }
+        }
+    
+    }
+    .dash_content{
+        width: 100%;
+
+        table{
+            tr{
+                
+               border-bottom: solid 5px white;
+               
+            }
+            border-collapse: collapse;
+            text-align: center;
+            
+            .data{
+                background-color: $color1;
+                
+                
+              
+
+                &:hover{
+                    background-color: white;
+                }
+
+            }
+            
+            th{
+                background-color: $color4;
+                color: $color1;
+                padding: 10px  60px ;
+            }
+            td{
+               
+                margin-bottom: 5px;
+                color: $color2;
+                padding: 7px  60px ;
+                span{
+                  
+                    font-size: 30px;
+
+                    i{
+                        &:hover{
+                            transform: scale(1.2);
+                            transition: 300ms;
+                        }
+
+                        }
+                    
+                }
+                .edit{
+                    margin-right: 20px;
+                    color: $color4;
+                   
+                    
+                }
+                .delete{
+                    color: $color3;
+                }
+
+               
+            }
+        }
+    }
+}

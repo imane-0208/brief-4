@@ -1,0 +1,101 @@
+// page sign up
+.sign-up {
+    display: flex;
+    height: 420px;
+    position: relative;
+
+
+
+    .signup-left {
+
+        @include decoration();
+
+
+    }
+
+    .signup-right {
+        width: 55%;
+
+
+        padding: 20px 30px 30px 30px;
+        box-sizing: border-box;
+
+        input {
+            @include border-non();
+
+        }
+
+        p {
+            color: $text-color;
+            font-size: 15px;
+            margin-bottom: 0px
+        }
+
+        select {
+            @include border-non();
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        #button-signup {
+            @include botton(100px);
+            margin-top: 20px;
+            margin-right: 10px;
+            border-radius: 15px;
+
+        }
+
+        a {
+            color: $principale-color;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 90px;
+
+
+        .signup-left {
+            @include decoration();
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 17px 0px 17px 0px;
+
+
+            p {
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+
+            i {
+
+                font-size: 60px;
+                margin-right: 10px;
+            }
+        }
+
+        .signup-right {
+
+            width: 100%;
+            padding: 10px 25px 30px 35px;
+
+            p {
+
+                font-size: 15px;
+            }
+
+        }
+    }
+
+}

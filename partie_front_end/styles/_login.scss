@@ -1,0 +1,96 @@
+// log in
+
+.log-in {
+    display: flex;
+    height: 420px;
+
+    .login-left {
+        @include decoration();
+    }
+
+    .login-right {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 50px 30px 50px;
+        box-sizing: border-box;
+
+
+
+        #title-login {
+            @include text-contact();
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        form {
+            margin-bottom: 0px;
+
+            input {
+                @include border-non();
+                margin-bottom: 45px;
+            }
+
+
+        }
+
+        #button-login {
+            margin-bottom: 0px;
+            @include botton(40%);
+            transform: translatex(70%);
+
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .log-in {
+        display: flex;
+        flex-direction: column;
+
+
+        .login-left {
+            @include decoration();
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 17px 0px 17px 0px;
+
+
+            p {
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+
+            i {
+
+                font-size: 60px;
+                margin-right: 10px;
+            }
+        }
+
+        .login-right {
+            width: 100%;
+            padding: 50px 30px 30px 30px;
+
+            #title-login {
+                display: none;
+            }
+
+            #button-login {
+
+                @include botton(40%);
+
+
+            }
+
+
+        }
+    }
+
+}
