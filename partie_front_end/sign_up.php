@@ -50,4 +50,5 @@
 
         </div>
     </div>
+    <script src="validation.js"></script>
     <?php include'footer.php'; ?>

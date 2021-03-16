@@ -40,5 +40,6 @@
 
         </div>
     </div>
+    <script src="validation-login.js"></script>
     <?php include'footer.php'; ?>
     </body>

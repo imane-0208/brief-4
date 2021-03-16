@@ -33,22 +33,19 @@ footer {
             }
 
             button {
-                width: 400px;
-
+                height: 30px;
+                width: 100px;
                 background-color: $button-color;
                 color: white;
                 border: none;
                 outline: none;
-                height: 30px;
-                padding: 0px 20px;
-                font-size: 10px;
+                padding: 0px 10px;
             }
         }
 
         div {
             display: flex;
             flex-direction: row;
-            justify-content: center;
 
 
         }
@@ -58,14 +55,24 @@ footer {
     .footer1-h,
     .footer2-h,
     .footer3-h {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .footer-media {
         i {
             margin-right: 10px;
             font-size: 23px;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 500ms;
+                color: $button-color;
+            }
         }
+    }
+
+    .phone {
+        transform: translateY(20px);
     }
 
 
@@ -89,16 +96,20 @@ footer {
         .footer1-h,
         .footer2-h,
         .footer3-h {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
 
         .footer1-h {
-            margin-bottom: 0px;
+            margin-bottom: 20px;
         }
 
         .footer1 {
             transform: translateX(-5%);
 
+        }
+
+        .phone {
+            transform: translateY(0px);
         }
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/style.css">
     <title>schoolary</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
@@ -30,15 +30,16 @@
 		</nav>
 	</header>
 
-    <div class="dash">
-    <div class="head_dash">
+	<!-- <div class="head_dash">
 		<div class="title_dash"><h2>Student Infos</h2></div>
 		<div class="btn_dash">
 			<div><button><i class="far fa-plus-square"></i>  <span>add new </span></button>
 			<input type="text" placeholder="search"></div>
 		</div>
-	</div>
-	<div class="dash_content">
+	</div> -->
+   
+    
+	<!-- <div class="dash_content">
 		<table>
 			<tr>
 				<th class="none"></th>
@@ -93,7 +94,74 @@
             
 		</table>
 	</div>
-    </div>
+    -->
+	<center><h4>Student Infos</h4></center>
+
+	
+		<!-- <h2>Student Infos</h2> -->
+		<div class="head_dash">
+			<div><button><i class="far fa-plus-square"></i>  <span>add new </span></button>
+			<input type="text" placeholder="search"></div>
+		</div>
+	
+	<table>
+  <!-- <caption>Statement Summary</caption> -->
+  
+  <thead>
+            <tr>
+				<th class="none"></th>
+				<th class="none">Id</th>
+				<th>First name</th>
+				<th>Last name</th>
+				<th class="none">age</th>
+				<th>Email</th>
+				<th class="none">Sector</th>
+				<th>Operation</th>
+			</tr>
+  </thead>
+  <tbody>
+  <tr class="data">
+				<td data-label="" class="none"><span><i class="far fa-user"></span></i></td>
+				<td data-label="Id" class="none">1</td>
+				<td data-label="First name">Ihab</td>
+				<td data-label="Last name">Slimi</td>
+				<td data-label="age" class="none">18</td>
+				<td data-label="Email">ihabslimi@gmail.com</td>
+				<td data-label="Sector" class="none">SVT</td>
+				<td data-label="Operation"><span class="edit"><i class="fas fa-pencil-alt"></i></span>  <span class="delete"><i class="fas fa-trash"></i></span></td>
+			</tr>
+			<tr class="data">
+				<td data-label="" class="none"><span><i class="far fa-user"></span></i></td>
+				<td data-label="Id" class="none">1</td>
+				<td data-label="First name">Ihab</td>
+				<td data-label="Last name">Slimi</td>
+				<td data-label="age" class="none">18</td>
+				<td data-label="Email">ihabslimi@gmail.com</td>
+				<td data-label="Sector" class="none">SVT</td>
+				<td data-label="Operation"><span class="edit"><i class="fas fa-pencil-alt"></i></span>  <span class="delete"><i class="fas fa-trash"></i></span></td>
+			</tr>
+			<tr class="data">
+				<td data-label="" class="none"><span><i class="far fa-user"></span></i></td>
+				<td data-label="Id" class="none">1</td>
+				<td data-label="First name">Ihab</td>
+				<td data-label="Last name">Slimi</td>
+				<td data-label="age" class="none">18</td>
+				<td data-label="Email">ihabslimi@gmail.com</td>
+				<td data-label="Sector" class="none">SVT</td>
+				<td data-label="Operation"><span class="edit"><i class="fas fa-pencil-alt"></i></span>  <span class="delete"><i class="fas fa-trash"></i></span></td>
+			</tr>
+			<tr class="data">
+				<td data-label="" class="none"><span><i class="far fa-user"></span></i></td>
+				<td data-label="Id" class="none">1</td>
+				<td data-label="First name">Ihab</td>
+				<td data-label="Last name">Slimi</td>
+				<td data-label="age" class="none">18</td>
+				<td data-label="Email">ihabslimi@gmail.com</td>
+				<td data-label="Sector" class="none">SVT</td>
+				<td data-label="Operation"><span class="edit"><i class="fas fa-pencil-alt"></i></span>  <span class="delete"><i class="fas fa-trash"></i></span></td>
+			</tr>
+  </tbody>
+</table>
 
 
 	
