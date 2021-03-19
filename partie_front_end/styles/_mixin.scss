@@ -1,3 +1,22 @@
+@mixin popup-submit {
+    input {
+        width: 130px;
+        height: 37px;
+        background-color: $button-color;
+        border: none;
+        border-radius: 0px;
+        color: white;
+    }
+}
+
+@mixin icone-title {
+    i {
+
+        color: $principale-color;
+        font-size: 40px;
+    }
+}
+
 @mixin botton($y) {
     height: 35px;
     width: $y;

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<?php include'navbar.php'; ?>
+<?php include 'navbar.php'; ?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +23,7 @@
         </div>
 
         <div class="signup-right">
-            <form class="formulaire-signup" name="inscription" action="">
+            <form class="formulaire-signup" name="inscription" action="inserte.php" method="POST">
               
                 <p>USERNAME</p>
                 <input   type="text" name="username" id="username"   >
@@ -29,9 +31,9 @@
                 <input  type="email" name="email" id="email"   >
                 <p>ROLE</p>
                 <select id="role" name="role" required >
-                    <option></option>
-                    <option>Enseignement </option>
-                    <option>Apprenant</option>
+                   
+                    <option value="1" >Enseignement </option>
+                    <option value="2" >Apprenant</option>
 
                 </select>
                 <p>PASSWORD</p>
@@ -39,7 +41,8 @@
                 <p> REPEAT PASSWORD</p>
                 <input  type="password" name="password-confirmation" id="password-confirmation" >
 
-                <input type="submit" id="button-signup" value="Sign up">
+                <input type="submit" name="submit" id="button-signup" value="Sign up">
+                
                 <span>        Or       <a href="login.html">       Log in</a></span>
                </form>
                <p style="color: red;font-size: 15px;" id="error"></p>

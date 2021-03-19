@@ -1,0 +1,289 @@
+.bottom-add {
+
+    font-size: 16px;
+    top: 300px;
+    left: 350px;
+    text-decoration: none;
+}
+
+.popup-add {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-156px);
+
+    .container-add {
+        background-color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 45%;
+        height: 60%;
+        border-radius: 20px;
+        margin: 20px;
+
+        .close-add {
+            i {
+                position: absolute;
+                right: -20px;
+                top: -15px;
+                font-size: 30px;
+                background-color: white;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        div {
+            margin-bottom: 15px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        input {
+            width: 80%;
+            height: 40px;
+            border-radius: 6px;
+            border: 1.2px solid;
+            outline: none;
+            color: $text-color;
+        }
+
+        i {
+            margin-right: 10px;
+            font-size: 23px;
+            color: $text-color;
+        }
+
+        .icone-title {
+            @include icone-title;
+        }
+
+        .submit-add {
+            @include popup-submit;
+        }
+
+    }
+
+
+}
+
+
+
+// popup eddit
+
+
+.popup-edit {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-156px);
+
+    .container-edit {
+        background-color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 45%;
+        height: 60%;
+        border-radius: 20px;
+        padding: 20px;
+
+        .close-edit {
+            i {
+                position: absolute;
+                right: -20px;
+                top: -15px;
+                font-size: 30px;
+                background-color: white;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        div {
+            margin-bottom: 15px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        input {
+            width: 80%;
+            height: 40px;
+            border-radius: 6px;
+            border: 1.2px solid;
+            outline: none;
+            color: $text-color;
+        }
+
+        #idapprenant {
+            display: none;
+        }
+
+        i {
+            margin-right: 10px;
+            font-size: 23px;
+            color: $text-color;
+        }
+
+        .icone-title {
+            @include icone-title;
+        }
+
+        .submit-edit {
+            @include popup-submit;
+
+        }
+
+
+    }
+
+}
+
+// popup delete
+
+.popup-delete {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .container-delete {
+        position: relative;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        height: 35%;
+        border-radius: 20px;
+        transform: translateY(-156px);
+
+        div {
+            margin-bottom: 25px;
+
+
+
+
+            p {
+                text-align: center;
+            }
+        }
+
+
+
+        .close-delete {
+            i {
+                position: absolute;
+                right: -15px;
+                top: -15px;
+                font-size: 30px;
+                background-color: white;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        .submit-delet {
+            @include popup-submit;
+        }
+
+
+        .icone-title {
+            @include icone-title;
+        }
+
+    }
+}
+
+//  media 
+
+
+@media only screen and (max-width: 600px) {
+
+    .popup-add {
+
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+
+        .container-add {
+
+
+            width: 80%;
+            height: 65%;
+
+        }
+
+    }
+
+
+    .popup-edit {
+
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+
+        .container-edit {
+
+
+            width: 80%;
+            height: 65%;
+
+        }
+
+    }
+
+    .popup-delete {
+
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+
+        .container-delete {
+
+
+            width: 80%;
+            height: 40%;
+
+        }
+
+    }
+
+
+
+
+}
