@@ -24,7 +24,7 @@
         <input  type="tel" placeholder="    Phone*" required >
         <input  type="text" placeholder="    Subject*" required >
         <textarea id="contact-message" placeholder="  Message..." rows="10" cols="84" required ></textarea>
-        <input type="submit" id="button-contact" value="Envoyer">
+        <div class="div-botton"><input type="submit" id="button-contact" value="Envoyer"></div>
 
        </form>
     </center>
@@ -35,7 +35,7 @@
 
       <div class="blok1">
           <img src="images/pin (1).svg" alt="icone localisation">
-          <p>Youcode Safi, Avenue <br>Zerktouni, Safi</p>
+          <p>Youcode Safi, Avenue Zerktouni, Safi</p>
       </div>
 
       <div class="blok2">

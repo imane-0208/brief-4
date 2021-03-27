@@ -1,6 +1,7 @@
 // formulaire
 
 .title-contact {
+    margin-top: $margin-bottom;
     @include text-contact()
 }
 
@@ -11,6 +12,7 @@
     font-size: 15px;
     color: $text-color;
     justify-content: center;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: $margin-bottom;
 
@@ -29,10 +31,20 @@
 
     }
 
-    #button-contact {
-        @include botton(140px);
-        transform: translateX(350px);
+    .div-botton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #button-contact {
+            @include botton(140px);
+
+        }
+
+
     }
+
 
     ::placeholder {
         font-size: 14px;
@@ -82,6 +94,7 @@
         P {
             font-size: 20px;
             color: $text-color;
+            text-align: center;
 
             &:hover {
                 color: $hover-color;

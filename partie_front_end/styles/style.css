@@ -222,11 +222,6 @@ footer .footer-media i:hover {
   color: #EB5E0B;
 }
 
-footer .phone {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
 @media only screen and (max-width: 600px) {
   footer {
     padding: 35px 40px 10px 35px;
@@ -1404,6 +1399,7 @@ h4 {
     }
 } */
 .title-contact {
+  margin-top: 60px;
   text-align: center;
   color: #5EAAA8;
   margin-bottom: 60px;
@@ -1421,6 +1417,9 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1436,15 +1435,26 @@ h4 {
   outline: none;
 }
 
-.formualire-contact #button-contact {
+.formualire-contact .div-botton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formualire-contact .div-botton #button-contact {
   height: 35px;
   width: 140px;
   background-color: #EB5E0B;
   color: white;
   border: none;
   outline: none;
-  -webkit-transform: translateX(350px);
-          transform: translateX(350px);
 }
 
 .formualire-contact ::-webkit-input-placeholder {
@@ -1512,6 +1522,7 @@ h4 {
 .contact-information div P {
   font-size: 20px;
   color: #42495B;
+  text-align: center;
 }
 
 .contact-information div P:hover {
@@ -1571,8 +1582,8 @@ iframe {
 .popup-add {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

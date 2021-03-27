@@ -1,13 +1,13 @@
+
 <?php
+session_start();
 include 'connection.php';
-?>
-<?php
-
-if(isset($_GET['del'])){ 
+echo"rafyh";
+if(isset($_POST['submit'])){ 
  
-  $idapprenant = $_GET['del'];
+  $idapprenant = $_SESSION["id"];
   $delete="DELETE FROM  apprenant  WHERE  apprenant.id_apprenant=$idapprenant " ;
-
+  echo"oussama";
   mysqli_query($con,$delete); 
  header('location:dashboard.php');
 }

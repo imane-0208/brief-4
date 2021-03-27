@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 include 'connection.php';
 ?>
 
@@ -86,13 +87,13 @@ include 'connection.php';
 <!-- html popup delet -->
 <div class="popup-delete" id="popup-delete">
 
-   <div class="container-delete" name="container-delete" action="delete.php" method="POST" >
+   <form class="container-delete" name="container-delete" action="delete.php" method="POST" >
                                
      <div class="close-delete"> <i class="far fa-times-circle"> </i> </div> 
     <div class="icone-title"><i  class="fas fa-exclamation-triangle"></i> </div>
     <div> <p> Are sure you want continue this <br>operation! </p></div>
-    <div class="submit-delet"> <a href="delete.php?del=<?php echo $row['id_apprenant']; ?>" type="submit" name="del"  value="Delete" >Submit</a> </div>
-</div>
+    <div class="submit-delet"> <input  type="submit" name="submit"  value="Delete" > </div>
+</form>
 </div>
 	
 	<table>
@@ -133,11 +134,12 @@ include 'connection.php';
         <?php $age= $row['age'];?>
         <?php $email= $row['email'];?>
         <?php $sector= $row['sector'];?>
+        <?php $_SESSION["id"] = $row['id_apprenant'];?>
 
 
-				<td data-label="Operation"><a class="botton-edit" ><span class="edit"><i onclick="edit('<?php echo $idapprenant; ?>','<?php echo  $firstname; ?>','<?php echo $lastname; ?>' , '<?php echo $age; ?>','<?php echo $email; ?>','<?php echo $sector; ?>')" class="fas fa-pencil-alt"></i></span> </a> 
+				<td data-label="Operation"><a class="botton-edit" onclick="edit('<?php echo $idapprenant; ?>','<?php echo  $firstname; ?>','<?php echo $lastname; ?>' , '<?php echo $age; ?>','<?php echo $email; ?>','<?php echo $sector; ?>')"  ><span class="edit"><i class="fas fa-pencil-alt"></i></span> </a> 
 
-                                   <a class="botton-delete" name="del1" href="delete.php?del=<?php echo $row['id_apprenant']; ?>"><span class="delete"><i class="fas fa-trash"></i></span></a>  </td>
+                                   <a class="botton-delete" onclick="document.querySelector('#popup-delete').style.display='flex'"   ><span class="delete"><i class="fas fa-trash"></i></span></a>  </td>
 			</tr>
 
             <?php } ?>
@@ -202,7 +204,7 @@ include 'connection.php';
 	  document.querySelector("#error-add").innerHTML = erreur;
 	  return false;
   } else {
-	  alert('votre inscription est envoyer');
+	  
 	  document.querySelector("#error-add").innerHTML = "";
   }
   
@@ -277,7 +279,7 @@ window.onclick = function(event) {
 	  document.querySelector("#error-edit").innerHTML = erreur;
 	  return false;
   } else {
-	  alert('votre inscription est envoyer');
+	  
 	  document.querySelector("#error-edit").innerHTML = "";
   }
   
